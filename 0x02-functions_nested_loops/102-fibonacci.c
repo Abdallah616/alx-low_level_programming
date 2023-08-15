@@ -15,10 +15,10 @@ int main(void)
 	for (x = 0; x < 50; x++)
 	{
 		sum = f1 + f2;
-		printf("%d", sum);
+		printf("%lu", sum);
 		f1 = f2;
 		f2 = sum;
-		if (count == 49)
+		if (x == 49)
 			printf("\n");
 		else
 			printf(", ");
