@@ -11,8 +11,8 @@ void times_table(void)
 		_putchar(48);
 		for (num2 = 1; num2 <= 9; num2++)
 		{
-			-putchar(',');
-			-putchar(' ');
+			_putchar(',');
+			_putchar(' ');
 			prod = num1 * num2
 			if (prod <= 9)
 				_putchar(' ');
