@@ -9,7 +9,6 @@
 */
 int main(void)
 {
-	int x;
 	unsigned long f1 = 0, f2 = 1, sum, total_sum = 0;
 
 	while (1)
