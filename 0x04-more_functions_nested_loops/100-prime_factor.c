@@ -9,7 +9,7 @@
 */
 void largest_prime_factor(long int num)
 {
-	int primn, largest;
+	long int  primn, largest;
 
 	while (num % 2 == 0)
 		num /= 2;
