@@ -24,7 +24,7 @@ void largest_prime_factor(long int num)
 	}
 	if (num > 2)
 		largest = num;
-	printf("%d", largest);
+	printf("%d\n", largest);
 }
 /**
  * main - Entry point
