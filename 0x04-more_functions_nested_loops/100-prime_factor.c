@@ -9,7 +9,7 @@
 */
 void largest_prime_factor(long int num)
 {
-	long int  primn, largest;
+	int  primn, largest;
 
 	while (num % 2 == 0)
 		num /= 2;
@@ -22,6 +22,9 @@ void largest_prime_factor(long int num)
 			largest = primn;
 		}
 	}
+	if (num > 2)
+		largest = num;
+	printf("%d", largest);
 }
 /**
  * main - Entry point
