@@ -14,7 +14,7 @@ void largest_prime_factor(long int num)
 	while (num % 2 == 0)
 		num /= 2;
 
-	for (primn = 3; primn <= sqrt(612852475143); primn += 2)
+	for (primn = 3; primn <= (int) sqrt(612852475143); primn += 2)
 	{
 		while (num % primn == 0)
 		{
