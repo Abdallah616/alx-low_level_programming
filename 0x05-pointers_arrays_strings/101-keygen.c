@@ -16,11 +16,13 @@ int main(void)
 	/* Set the seed for the random number generator.*/
 	srand(time(NULL));
 
-	for (i = 0; i < 15; i++)
+	while (sum < = 1538)
 	{
 		c = rand() % 128;
+		sum += c;
 		putchar(c);
 	}
+	purchar(1675 - sum);
 
 	return (0);
 }
