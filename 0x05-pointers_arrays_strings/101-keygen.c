@@ -13,7 +13,7 @@ int main(void)
 	int i;
 
 	srand(time(NULL));
-	for (i = 0; i <= 15; i++)
+	for (i = 0; i <= 64; i++)
 	{
 		char c = rand();
 
