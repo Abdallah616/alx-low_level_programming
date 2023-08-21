@@ -10,12 +10,12 @@
 */
 int main(void)
 {
-	int i;
+	int sum;
 	char c;
 
 	/* Set the seed for the random number generator.*/
 	srand(time(NULL));
-
+	sum = 0;
 	while (sum < = 1538)
 	{
 		c = rand() % 128;
