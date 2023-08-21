@@ -14,7 +14,7 @@ int main(void)
 	char c;
 
 	/* Set the seed for the random number generator.*/
-	srand(time(NULL))
+	srand(time(NULL));
 
 	for (i = 0; i < 16; i++)
 	{
