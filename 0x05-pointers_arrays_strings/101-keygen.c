@@ -10,17 +10,16 @@
 */
 int main(void)
 {
-	int i
-		;
-	/* Set the seed for the random number generator.*/
-	srand(time(NULL));
+	int i;
+	char c;
 
-	/* Generate a random password.*/
-	char password[16];
+	/* Set the seed for the random number generator.*/
+	srand(time(NULL))
 
 	for (i = 0; i < 16; i++)
 	{
-		password[i] = (char) (rand() % 26 + 'a');
+		c = rand();
+		putchar(c);
 	}
 
 	return (0);
