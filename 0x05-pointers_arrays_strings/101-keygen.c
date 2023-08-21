@@ -18,7 +18,7 @@ int main(void)
 
 	for (i = 0; i < 15; i++)
 	{
-		c = rand();
+		c = rand() % 128;
 		putchar(c);
 	}
 
