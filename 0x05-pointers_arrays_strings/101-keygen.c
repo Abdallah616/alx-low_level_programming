@@ -16,7 +16,7 @@ int main(void)
 	/* Set the seed for the random number generator.*/
 	srand(time(NULL));
 	sum = 0;
-	while (sum < = 1538)
+	while (sum <= 1538)
 	{
 		c = rand() % 128;
 		sum += c;
