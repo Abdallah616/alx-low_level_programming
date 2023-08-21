@@ -22,7 +22,7 @@ int main(void)
 		sum += c;
 		putchar(c);
 	}
-	putchar(1675 - sum);
+	putchar(1666 - sum);
 
 	return (0);
 }
