@@ -3,7 +3,7 @@
 /**
  * isLower - determine if character is lowercase
  *
- * @: character
+ * @c: character
  *
  * Return: (num of char in ascii) if true and 0 if false
 */
