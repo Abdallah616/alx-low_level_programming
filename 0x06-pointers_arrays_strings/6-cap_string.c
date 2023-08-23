@@ -39,7 +39,7 @@ int isdelimiter(char c)
 */
 char *cap_string(char *s)
 {
-	int foundDelimiter;
+	int foundDelimiter = 1;
 	char *ptr = s;
 
 	while (*s)
