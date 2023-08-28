@@ -19,7 +19,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[itr1] == s[itr])
 			{
-				p = &str[itr];
+				p = &s[itr];
 				return (p);
 			}
 		}
