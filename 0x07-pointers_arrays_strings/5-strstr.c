@@ -6,7 +6,8 @@
  * @needle: needle − This is the small string to be searched within
  *                      haystack string
  *
- * Return: the beginning of the located substring, or NULL if the substring is not found.
+ * Return: the beginning of the located substring,
+ *		or NULL if the substring is not found.
 */
 char *_strstr(char *haystack, char *needle)
 {
@@ -17,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 	while (*haystack)
 	{
 		i = 0;
-		if (haystack [i] == needle[i])
+		if (haystack[i] == needle[i])
 		{
 			do {
 				if (needle[i + 1] == '\0')
