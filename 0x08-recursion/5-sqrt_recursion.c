@@ -9,9 +9,9 @@
 */
 int sqr(int n, int value)
 {
-	if (val * val == n)
-		return (val);
-	else if (val * val < n)
+	if (value * value == n)
+		return (value);
+	else if (value * value < n)
 		return (sqr(n, val + 1));
 	else
 		return (-1);
