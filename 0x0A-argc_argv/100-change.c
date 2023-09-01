@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints the minimum number of coinsto make
  *			change for an ammount of money
@@ -24,7 +25,7 @@ int main(int argc, char **argv)
 					break;
 			}
 		}
-		printf("%d\n", leastcents)
+		printf("%d\n", leastcents);
 	}
 	else
 	{

@@ -5,7 +5,7 @@
  * @argc: int
  * @argv: list
  *
- * Return: 0 if true non zero if fals
+ * Return: 0 if true non zero if false
 */
 int main(int argc, char *argv[])
 {
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	while (argc--)
 	{
 		printf("%s\n", argv[i]);
-		i++;
+		itr++;
 	}
 	return (0);
 }
