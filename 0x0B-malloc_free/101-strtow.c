@@ -38,9 +38,9 @@ char **strtow(char *str)
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	n = countwords(str);
-	if (n == 1)
+	if (n == 0)
 		return (NULL);
-	wo = (char **)malloc(n * sizeof(char *) + 1);
+	wo = (char **)malloc((n + 1) * sizeof(char *));
 	if (wo == NULL)
 		return (NULL);
 	wo[n] = NULL;
