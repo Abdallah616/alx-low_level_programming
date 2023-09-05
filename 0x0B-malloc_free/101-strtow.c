@@ -40,7 +40,7 @@ char **strtow(char *str)
 	n = countwords(str);
 	if (n == 1)
 		return (NULL);
-	wo = (char **)malloc((n + 1) * sizeof(char *));
+	wo = (char **)malloc(n * sizeof(char *) + 1);
 	if (wo == NULL)
 		return (NULL);
 	wo[n] = NULL;
