@@ -36,7 +36,7 @@ int _atoi(const char *s)
 	for (i = fnum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		num *= 10;
-		num += (s[i] + 48);
+		num += (s[i] - 48);
 	}
 	return (sign * num);
 }
