@@ -23,7 +23,7 @@ void _puts(char *str)
  *
  * Return: converted int from string
 */
-int _atoi(char *s)
+int _atoi(const char *s)
 {
 	unsigned int num = 0;
 	int sign = 1;
@@ -50,9 +50,9 @@ int _atoi(char *s)
  *
  * Return: Nothing
 */
-void print_int(unsigned int n)
+void print_int(unsigned long int n)
 {
-	unsigned int div = 1, i, res;
+	unsigned long int div = 1, i, res;
 
 	for (i = 0; n / div > 9; i++, div *= 10)
 		;
