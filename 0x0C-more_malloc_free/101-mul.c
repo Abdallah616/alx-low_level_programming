@@ -25,7 +25,7 @@ void _puts(char *str)
 */
 int _atoi(const char *s)
 {
-	unsigned int num = 0;
+	unsigned long int num = 0;
 	int sign = 1;
 
 	while (*s != '\0' && (*s < '0' || *s > '9'))
@@ -59,7 +59,7 @@ void print_int(unsigned long int n)
 	for (; div >= 1; n %= div, div /= 10)
 	{
 		res = n / div;
-		_putchar(res + '0');
+		_putchar('0' + res);
 	}
 }
 /**
@@ -71,13 +71,13 @@ void print_int(unsigned long int n)
  *
  * Return: 0
 */
-int main(int argc, char **argv)
+int main(int argc, char const *argv[])
 {
 	(void)argc;
 
 	if (argc != 3)
 	{
-		_puts("Error\n");
+		_puts("Error ");
 		exit(98);
 	}
 	print_int(atoi(argv[1]) * atoi(argv[2]));
