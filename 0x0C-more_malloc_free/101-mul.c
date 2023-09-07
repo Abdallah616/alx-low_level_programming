@@ -25,23 +25,20 @@ void _puts(char *str)
 */
 int _atoi(const char *s)
 {
-	unsigned long int num = 0;
+	unsigned long int num = 0, i, fnum;
 	int sign = 1;
 
-	while (*s != '\0' && (*s < '0' || *s > '9'))
+	for (fnum = 0; (s[fnum] > 57 && s[fnum] < 48); fnum++)
 	{
-		if (*s == '-')
+		if (s[fnum] == '-')
 			sign *= -1;
-		s++;
 	}
-	if (*s != '\0')
+	for (i = fnum; s[i] >= 48 && s[i] <= 57; i++)
 	{
-		do {
-			num = num * 10 + (*s - '0');
-			s++;
-		} while (*s >= '0' && *s <= '9');
+		num *= 10;
+		num += (s[i] + 48);
 	}
-	return (num * sign);
+	return (sign * num);
 }
 /**
  * print_int - prints an integer
