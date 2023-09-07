@@ -77,7 +77,7 @@ int main(int argc, char const *argv[])
 		_puts("Error ");
 		exit(98);
 	}
-	print_int(atoi(argv[1]) * atoi(argv[2]));
+	print_int(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
 	return (0);
 }
