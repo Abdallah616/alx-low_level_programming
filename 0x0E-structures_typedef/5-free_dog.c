@@ -2,7 +2,7 @@
 /**
  * free_dog - frees a dog
  *
- * @s: dog to be freed
+ * @d: dog to be freed
  *
  * Return: void
 */
