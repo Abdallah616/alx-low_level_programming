@@ -3,6 +3,7 @@
  * print_name -  function that prints a name.
  *
  * @name: the name to print.
+ * @f: function pointer
  *
  * Return: void
 */
