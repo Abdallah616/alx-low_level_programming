@@ -4,7 +4,15 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
+/**
+ * struct lists - singly listed list
+ *
+ * @str: malloc'ed string.
+ * @len: length of string.
+ * @next: points to next node.
+ *
+ * Description: singly linked list node structure.
+*/
 typedef struct lists
 {
 	char *str;
