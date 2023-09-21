@@ -5,19 +5,18 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * struct lists - singly listed list
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
  *
- * @str: malloc'ed string.
- * @len: length of string.
- * @next: points to next node.
- *
- * Description: singly linked list node structure.
-*/
-typedef struct lists
+ * Description: singly linked list node structure
+ */
+typedef struct list_s
 {
-	char *str;
-	unsigned int len;
-	struct lists *next;
+    char *str;
+    unsigned int len;
+    struct list_s *next;
 } list_t;
 
 int _strlen(char *s);
