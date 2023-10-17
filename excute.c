@@ -13,14 +13,14 @@ void execute_command(const char *input, const char *program_name)
     args[i] = NULL;
     if (i == 0)
         return;
-    if (_strcmp(args[0], "exit") == 0)
+    if (sh_strcmp(args[0], "exit") == 0)
         exit(EXIT_SUCCESS);
-    if (_strcmp(args[0], "env") == 0)
+    if (sh_strcmp(args[0], "env") == 0)
     {
         print_environment();
         return;
     }
-    if (_strcmp(args[0], "cd") == 0)
+    if (sh_strcmp(args[0], "cd") == 0)
      {
         sh_cd(args[1], program_name);
         return;

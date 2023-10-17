@@ -17,5 +17,13 @@ void sh_cd(const char *args, const char *program_name);
 void execute_command(const char *input, const char *program_name);
 void print_environment();
 int _strcmp(char *s1, char *s2);
+char *sh_strcpy(char *dst, char *sorc);
+char *sh_strdup(const char *s);
+int sh_putchar(char c);
+void sh_puts(char *s);
+char *sh_strcat(char *dst, char *sorc);
+int sh_strlen(char *str);
+int sh_strcmp(const char *str1, const char *str2);
+unsigned int _strspn(char *s, char *accept);
 
 #endif
