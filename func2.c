@@ -1,4 +1,5 @@
 #include "shell.h"
+char *my_strtok(char *str, const char *delim);
 /**
  * sh_putchar - writes the character c to stdout
  * @c: The character to print
@@ -27,5 +28,6 @@ void sh_puts(char *s)
 	{
 		sh_putchar(s[k]);
 		k++;
+	
 	}
 }

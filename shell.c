@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
         }
 
 
-        input[_strspn(input, "\n")] = '\0';
+        input[my_strcspn(input, "\n")] = '\0';
 
         if (sh_strcmp(input, "") == 0) {
             continue;

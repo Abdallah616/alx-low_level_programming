@@ -25,5 +25,7 @@ char *sh_strcat(char *dst, char *sorc);
 int sh_strlen(char *str);
 int sh_strcmp(const char *str1, const char *str2);
 unsigned int _strspn(char *s, char *accept);
+size_t my_strcspn(const char *str, const char *reject);
+
 
 #endif
