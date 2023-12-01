@@ -7,10 +7,12 @@ int main(int argc, char *argv[]) {
 
     (void)argc;
     while (1) {
-        printf("simple_shell$ ");
-        if (fgets(input, sizeof(input), stdin) == NULL) {
-
-            printf("\n");
+       		if (isatty(STDIN_FILENO))
+		{
+			sh_puts("($) ");
+		}
+        if (fgets(input, sizeof(input), stdin) == NULL)
+	{
             break;
         }
 
