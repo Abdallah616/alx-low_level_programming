@@ -22,6 +22,7 @@ typedef struct skiplist_s
 	struct skiplist_s *next;
 	struct skiplist_s *express;
 } skiplist_t;
+
 /**
  * struct listint_s - singly linked list
  *
